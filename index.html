@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Guia</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Blinker:wght@600&family=Encode+Sans&family=Scope+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="contiainer">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-5 mt-4 ms-5 me-5 row-xs">
+          <h2>Estructura if y forEach</h2>
+          <ul class="list-group mt-2">
+            <li href="#" class="list-group-item list-group-item-action">
+              <span class="subtitle-level1">Estructura if</span>
+              <ul class="list-group mt-2">
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Estructura basica</span> 
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="keyword">const</span> <span class="variable">num1</span> <span class="operator">=</span> <span class="number">5</span><span class="punctuation">;</span>
+                          <span class="keyword">const</span> <span class="variable">num2</span> <span class="operator">=</span> <span class="number">10</span><span class="punctuation">;</span>
+                          <span class="structure">if</span><span class="punctuation">(</span> <span class="variable">num1</span> <span class="structure">></span> <span class="variable">num2</span> <span class="punctuation">)</span> <span class="comment">&nbsp;// condicion </span> 
+                          <span class="punctuation">{</span>
+                          <span class="variable">&nbsp;&nbsp;&nbsp; console.<span class="method">log</span></span><span class="variable">(</span> <span class="variable">num1</span> <span class="structure">+</span> <span class="string">' es mayor que '</span> <span class="structure">+</span> <span class="variable">num2</span> <span class="variable">)</span><span class="variable">;</span> <span class="comment">&nbsp;// true </span> 
+                          <span class="punctuation">}</span> <span class="structure">else</span> <span class="punctuation">{</span>
+                          <span class="variable">&nbsp;&nbsp;&nbsp; console.<span class="method">log</span></span><span class="variable">(</span> <span class="variable">num2</span> <span class="structure">+</span> <span class="string">' es mayor que '</span> <span class="structure">+</span> <span class="variable">num1</span>  <span class="variable">)</span><span class="variable">;</span> <span class="comment">&nbsp;// false </span> 
+                          <span class="punctuation">}</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Operador ternario</span> 
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="keyword">const</span> <span class="variable">num1</span> <span class="operator">=</span> <span class="number">5</span><span class="punctuation">;</span>
+                          <span class="keyword">const</span> <span class="variable">num2</span> <span class="operator">=</span> <span class="number">10</span><span class="punctuation">;</span>
+                          <span class="variable">num1</span> <span class="structure">></span> <span class="variable">num2</span> <span class="structure">?</span> <span class="variable">console.<span class="method">log</span></span><span class="variable">(</span> <span class="variable">num2</span> <span class="structure">+</span> <span class="string">' es mayor que '</span> <span class="structure">+</span> <span class="variable">num1</span>  <span class="variable">)</span> <span class="structure">:</span> <span class="variable">console.<span class="method">log</span></span><span class="variable">(</span> <span class="variable">num2</span> <span class="structure">+</span> <span class="string">' es mayor que '</span> <span class="structure">+</span> <span class="variable">num1</span>  <span class="variable">)</span><span class="variable">;</span>
+                          <span class="comment">// condicion &nbsp;? &nbsp;true &nbsp;: &nbsp;false;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="list-group mt-2">
+            <li href="#" class="list-group-item list-group-item-action">
+              <span class="subtitle-level1">Estructura forEach</span>
+              <ul class="list-group mt-2 container-code">
+                <li href="#" class="list-group-item list-group-item-action background-code">
+                  <pre>
+                    <code class="language-js">
+                      <span class="variable">array</span><span class="method">.forEach</span><span class="punctuation">(</span><span class="variable">element</span> <span class="punctuation">=></span> <span class="punctuation">{</span>
+                        <span class="variable">&nbsp;&nbsp;&nbsp; console.<span class="method">log</span></span><span class="punctuation">(</span><span class="variable">element</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                      <span class="punctuation">}</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                    </code>
+                  </pre>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-5 mt-4 ms-5 me-5">
+          <h2>Arreglos</h2>
+          <ul class="list-group mt-2">
+            <li href="#" class="list-group-item list-group-item-action">
+              <span class="subtitle-level1">Crear Arreglos</span>
+              <ul class="list-group col-12 mt-2 container-code">
+                <li href="#" class="list-group-item list-group-item-action background-code">
+                  <pre>
+                    <code class="language-js">
+                      <span class="keyword">const</span> <span class="variable">frutas</span> <span class="punctuation">=</span> <span class="keyword">[</span><span class="string"> 'Manzana' , 'Banana' </span><span class="keyword">]</span><span class="punctuation">;</span>
+                    </code>
+                  </pre>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="list-group mt-2">
+            <li href="#" class="list-group-item list-group-item-action">
+              <span class="subtitle-level1">Recorrer Arreglos</span>
+              <ul class="list-group col-12 mt-2 container-code">
+                <li href="#" class="list-group-item list-group-item-action background-code">
+                  <pre>
+                    <code class="language-js">
+                      <span class="keyword">const</span> <span class="variable">frutas</span> <span class="punctuation">=</span> <span class="keyword">[</span><span class="string"> 'Manzana' , 'Banana' </span><span class="keyword">]</span><span class="punctuation">;</span>
+                      <span class="variable">frutas</span><span class="method">.forEach</span><span class="punctuation">(</span><span class="variable">fruta</span> <span class="punctuation">=></span> <span class="punctuation">{</span>
+                        <span class="variable">&nbsp;&nbsp;&nbsp; console.<span class="method">log</span></span><span class="punctuation">(</span><span class="variable">fruta</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                      <span class="punctuation">}</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                    </code>
+                  </pre>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="list-group mt-2">
+            <li href="#" class="list-group-item list-group-item-action">
+              <span class="subtitle-level1">Metodos</span>
+              <ul class="list-group col-12 mt-2">
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Conocer el largo</span> 
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="variable">frutas.</span><span class="method">length</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Acceder a un elemento del arreglo mediante su indice</span> 
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="variable">frutas</span><span class="keyword">[</span><span class="variable">0</span><span class="keyword">]</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Añadir un elemento</span> 
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="variable">frutas.</span><span class="method">push</span><span class="punctuation">(</span><span class="string">'Fresa'</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Eliminar el último elemento</span> 
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="variable">frutas.</span><span class="method">pop</span><span class="punctuation">(</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Añadir un elemento al principio</span> 
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="variable">frutas.</span><span class="method">unshift</span><span class="punctuation">(</span><span class="string">'Fresa'</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Eliminar el primer elemento</span>
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="variable">frutas.</span><span class="method">shift</span><span class="punctuation">(</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Encontrar el indice de un elemento</span>
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="variable">frutas.</span><span class="method">indexOf</span><span class="punctuation">(</span><span class="string">'Banana'</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Eliminar un elemento mediante su posicion</span>
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="variable">frutas.</span><span class="method">splice</span><span class="punctuation">(</span><span class="variable">pos</span><span class="variable">, </span><span class="number">1</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Eliminar varios elementos a partir de una posicion</span>
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="keyword">const</span> <span class="variable">vegetales</span> <span class="punctuation">=</span> <span class="keyword">[</span><span class="string"> 'Repollo' , 'Nabo', 'Rábano', 'Zanahoria' </span><span class="keyword">]</span><span class="punctuation">;</span>
+                          <span class="keyword">const</span> <span class="variable">pos</span> <span class="punctuation">=</span> <span class="number">1</span><span class="punctuation">;</span>
+                          <span class="keyword">const</span> <span class="variable">numElementos</span> <span class="punctuation">=</span> <span class="number">2</span><span class="punctuation">;</span>
+                          <span class="variable">vegetales.</span><span class="method">splice</span><span class="punctuation">(</span><span class="variable">pos</span><span class="variable">, </span><span class="variable">numElementos</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Crear una copia</span>
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="keyword">let</span> <span class="variable">copiaArray</span> <span class="punctuation">=</span> <span class="variable">frutas.</span><span class="method">slice</span><span class="punctuation">(</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-5 mt-4 ms-5 me-5">
+          <h2>Objetos</h2>
+          <ul class="list-group mt-2">
+            <li href="#" class="list-group-item list-group-item-action">
+              <span class="subtitle-level1">Crear Objetos</span>
+              <ul class="list-group col-12 mt-2 container-code">
+                <li href="#" class="list-group-item list-group-item-action background-code">
+                  <pre>
+                    <code class="language-js">
+                      <span class="keyword">const</span> <span class="variable">miAuto</span> <span class="operator">=</span> <span class="punctuation">{</span>
+                      <span class="string">&nbsp;&nbsp;&nbsp; marca: 'Ford'</span><span class="punctuation">,</span>
+                      <span class="string">&nbsp;&nbsp;&nbsp; modelo: 'Mustang'</span><span class="punctuation">,</span>
+                      <span class="string">&nbsp;&nbsp;&nbsp; año:</span> <span class="number">1969</span>
+                      <span class="punctuation">}</span><span class="punctuation">;</span>
+                    </code>
+                  </pre>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="list-group mt-2">
+            <li href="#" class="list-group-item list-group-item-action">
+              <span class="subtitle-level1">Crear arreglo con objetos dentro</span>
+              <ul class="list-group col-12 mt-2 container-code">
+                <li href="#" class="list-group-item list-group-item-action background-code">
+                  <pre>
+                    <code class="language-js">
+                      <span class="keyword">const</span> <span class="variable">misAutos</span> <span class="operator">=</span> <span class="keyword">[</span>
+                      <span class="punctuation">&nbsp;&nbsp;&nbsp; {</span>
+                      <span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; marca: 'Ford'</span><span class="punctuation">,</span>
+                      <span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; modelo: 'Mustang'</span><span class="punctuation">,</span>
+                      <span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; año:</span> <span class="number">1969</span>
+                      <span class="punctuation">&nbsp;&nbsp;&nbsp; }</span><span class="punctuation">,</span>
+                      <span class="punctuation">&nbsp;&nbsp;&nbsp; {</span>
+                        <span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; marca: 'Chevrolet'</span><span class="punctuation">,</span>
+                        <span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; modelo: 'Camaro'</span><span class="punctuation">,</span>
+                        <span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; año:</span> <span class="number">1977</span>
+                        <span class="punctuation">&nbsp;&nbsp;&nbsp; }</span>
+                      <span class="keyword">]</span><span class="punctuation">;</span>
+                    </code>
+                  </pre>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="list-group mt-2">
+            <li href="#" class="list-group-item list-group-item-action">
+                <span class="subtitle-level1"> Crear arreglos que tengan objetos dentro y que a su vez tengan
+                    otro arreglo</span>
+              <ul class="list-group col-12 mt-2 container-code">
+                <li href="#" class="list-group-item list-group-item-action background-code">
+                  <pre>
+                    <code class="language-js">
+                      <span class="keyword">const</span> <span class="variable">misAutos</span> <span class="operator">=</span> <span class="keyword">[</span>
+                      <span class="punctuation">&nbsp;&nbsp;&nbsp; {</span>
+                      <span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; marca: 'Ford'</span><span class="punctuation">,</span>
+                      <span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; modelo: 'Mustang'</span><span class="punctuation">,</span>
+                      <span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; año:</span> <span class="keyword">[</span><span class="number">1969,</span> <span class="number">1972</span><span class="keyword">]</span>
+                      <span class="punctuation">&nbsp;&nbsp;&nbsp; }</span><span class="punctuation">,</span>
+                      <span class="punctuation">&nbsp;&nbsp;&nbsp; {</span>
+                        <span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; marca: 'Chevrolet'</span><span class="punctuation">,</span>
+                        <span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; modelo: 'Camaro'</span><span class="punctuation">,</span>
+                        <span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; año:</span> <span class="keyword">[</span><span class="number">1977,</span> <span class="number">1980</span><span class="keyword">]</span>
+                        <span class="punctuation">&nbsp;&nbsp;&nbsp; }</span>
+                      <span class="keyword">]</span><span class="punctuation">;</span>
+                    </code>
+                  </pre>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="list-group mt-2">
+            <li href="#" class="list-group-item list-group-item-action">
+              <span class="subtitle-level1">Recorrer arreglo con objetos dentro</span>
+              <ul class="list-group col-12 mt-2 container-code">
+                <li href="#" class="list-group-item list-group-item-action background-code">
+                  <pre>
+                    <code class="language-js">
+                      <span class="variable">misAutos</span><span class="method">.forEach</span><span class="punctuation">(</span><span class="variable">element</span> <span class="punctuation">=></span> <span class="punctuation">{</span>
+                        <span class="variable">&nbsp;&nbsp;&nbsp; console.<span class="method">log</span></span><span class="punctuation">(</span><span class="variable">element</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                      <span class="punctuation">}</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                    </code>
+                  </pre>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-5 mt-4 ms-5 me-5">
+          <h2>Navegar por el DOM</h2>
+          <ul class="list-group mt-2">
+            <li href="#" class="list-group-item list-group-item-action">
+              <span class="subtitle-level1">Navegar a traves de elementos</span>
+              <ul class="list-group col-12 mt-2">
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Devuelve una lista de elementos HTML hijos</span> 
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="variable">element</span><span class="punctuation">.</span><span class="method">children</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Devuelve el padre del elemento o null si no tiene</span> 
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="variable">element</span><span class="punctuation">.</span><span class="method">parentElement</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Devuelve el primer elemento hijo</span> 
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="variable">element</span><span class="punctuation">.</span><span class="method">firstElementChild</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Devuelve el último elemento hijo</span> 
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="variable">element</span><span class="punctuation">.</span><span class="method">lastElementChild</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Devuelve el elemento hermano anterior o null si no tiene</span> 
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="variable">element</span><span class="punctuation">.</span><span class="method">previousElementSibling</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Devuelve el elemento hermano siguiente o null si no tiene</span> 
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="variable">element</span><span class="punctuation">.</span><span class="method">nextElementSibling</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="list-group mt-2">
+            <li href="#" class="list-group-item list-group-item-action">
+              <span class="subtitle-level1">Navegar a traves de nodos</span>
+              <ul class="list-group col-12 mt-2">
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Devuelve una lista de nodos hijos. Incluye nodos de texto y
+                    comentarios</span> 
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="variable">element</span><span class="punctuation">.</span><span class="method">childNodes</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Devuelve el nodo padre del nodo o null si no tiene</span> 
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="variable">element</span><span class="punctuation">.</span><span class="method">parentNode</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Devuelve el primer nodo hijo</span> 
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="variable">element</span><span class="punctuation">.</span><span class="method">firstChild</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Devuelve el último nodo hijo</span> 
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="variable">element</span><span class="punctuation">.</span><span class="method">lastChild</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Devuelve el nodo hermano anterior o null si no tiene</span> 
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="variable">element</span><span class="punctuation">.</span><span class="method">previousSibling</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Devuelve el nodo hermano siguiente o null si no tiene</span> 
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="variable">element</span><span class="punctuation">.</span><span class="method">nextSibling</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-5 mt-4 ms-5 me-5 mb-5">
+          <h2>Crear, modificar o eliminar elementos HTML</h2>
+          <ul class="list-group mt-2">
+            <li href="#" class="list-group-item list-group-item-action">
+              <span class="subtitle-level1">Crear elementos html</span>
+              <ul class="list-group col-12 mt-2 container-code">
+                <li href="#" class="list-group-item list-group-item-action background-code">
+                  <pre>
+                    <code class="language-js">
+                      <span class="keyword">const</span> <span class="variable">nuevoDiv</span> <span class="operator">=</span> <span class="keyword">document</span><span class="punctuation">.</span><span class="method">createElement</span><span class="punctuation">(</span><span class="string">'div'</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                    </code>
+                  </pre>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="list-group mt-2">
+            <li href="#" class="list-group-item list-group-item-action">
+              <span class="subtitle-level1">Eliminar elementos html</span>
+              <ul class="list-group col-12 mt-2 container-code">
+                <li href="#" class="list-group-item list-group-item-action background-code">
+                    <pre>
+                      <code class="language-js">
+                        <span class="variable">nuevoDiv</span><span class="punctuation">.</span><span class="method">removeChild</span><span class="punctuation">(</span><span class="variable">element</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                      </code>
+                    </pre>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="list-group mt-2">
+            <li href="#" class="list-group-item list-group-item-action">
+              <span class="subtitle-level1">Agregar elemento creado dentro de otro</span>
+              <ul class="list-group col-12 mt-2 container-code">
+                <li href="#" class="list-group-item list-group-item-action background-code">
+                  <pre>
+                    <code class="language-js">
+                      <span class="keyword">const</span> <span class="variable">nuevoTexto</span> <span class="operator">=</span> <span class="keyword">document</span><span class="punctuation">.</span><span class="method">createTextNode</span><span class="punctuation">(</span><span class="string">'Hola! ¿Qué tal?'</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                      <span class="variable">nuevoDiv</span><span class="punctuation">.</span><span class="method">appendChild</span><span class="punctuation">(</span><span class="variable">nuevoTexto</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                    </code>
+                  </pre>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="list-group mt-2">
+            <li href="#" class="list-group-item list-group-item-action">
+              <span class="subtitle-level1">Cambiarle los estilos a un elemento</span>
+              <ul class="list-group col-12 mt-2 container-code">
+                <li href="#" class="list-group-item list-group-item-action background-code">
+                  <pre>
+                    <code class="language-js">
+                      <span class="variable">nuevoDiv</span><span class="punctuation">.</span><span class="keyword">style</span><span class="punctuation">.</span><span class="variable">backgroundColor</span> <span class="punctuation">=</span> <span class="string">'red'</span><span class="punctuation">;</span>
+                    </code>
+                  </pre>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="list-group mt-2">
+            <li href="#" class="list-group-item list-group-item-action">
+              <span class="subtitle-level1">Agregarle una clase a un elemento</span>
+              <ul class="list-group col-12 mt-2 container-code">
+                <li href="#" class="list-group-item list-group-item-action background-code">
+                  <pre>
+                    <code class="language-js">
+                      <span class="variable">nuevoDiv</span><span class="punctuation">.</span><span class="keyword">className</span> <span class="punctuation">=</span> <span class="string">'nombreClase'</span><span class="punctuation">;</span>
+                    </code>
+                  </pre>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="list-group mt-2">
+            <li href="#" class="list-group-item list-group-item-action">
+              <span class="subtitle-level1">Agregarle una classList a un elemento</span>
+              <ul class="list-group col-12 mt-2 container-code">
+                <li href="#" class="list-group-item list-group-item-action background-code">
+                  <pre>
+                    <code class="language-js">
+                      <span class="variable">nuevoDiv</span><span class="punctuation">.</span><span class="keyword">classList</span><span class="punctuation">.</span><span class="method">add</span><span class="punctuation">(</span><span class="string">'nombreClase'</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                      <span class="variable">nuevoDiv</span><span class="punctuation">.</span><span class="keyword">classList</span><span class="punctuation">.</span><span class="method">add</span><span class="punctuation">(</span><span class="string">'nombreClase1',</span> <span class="string">'nombreClase2'</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                    </code>
+                  </pre>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="list-group mt-2">
+            <li href="#" class="list-group-item list-group-item-action">
+              <span class="subtitle-level1">Eliminar una classList de un elemento</span>
+              <ul class="list-group col-12 mt-2 container-code">
+                <li href="#" class="list-group-item list-group-item-action background-code">
+                  <pre>
+                    <code class="language-js">
+                      <span class="variable">nuevoDiv</span><span class="punctuation">.</span><span class="keyword">classList</span><span class="punctuation">.</span><span class="method">remove</span><span class="punctuation">(</span><span class="string">'nombreClase'</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                      <span class="variable">nuevoDiv</span><span class="punctuation">.</span><span class="keyword">classList</span><span class="punctuation">.</span><span class="method">remove</span><span class="punctuation">(</span><span class="string">'nombreClase1',</span> <span class="string">'nombreClase2'</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                    </code>
+                  </pre>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="list-group mt-2">
+            <li href="#" class="list-group-item list-group-item-action">
+              <span class="subtitle-level1">Ver si el elemento contiene x clase en su classList</span>
+              <ul class="list-group col-12 mt-2 container-code">
+                <li href="#" class="list-group-item list-group-item-action background-code">
+                  <pre>
+                    <code class="language-js">
+                      <span class="variable">nuevoDiv</span><span class="punctuation">.</span><span class="keyword">classList</span><span class="punctuation">.</span><span class="method">contains</span><span class="punctuation">(</span><span class="string">'nombreClase'</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                    </code>
+                  </pre>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="list-group mt-2">
+            <li href="#" class="list-group-item list-group-item-action">
+              <span class="subtitle-level1">Insertar elementos html con innerHTML</span>
+              <ul class="list-group col-12 mt-2">
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Devuelve el nombre del nodo (etiqueta si es un elemento HTML).
+                    Sólo lectura</span> 
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="variable">nuevoDiv</span><span class="punctuation">.</span><span class="method">nodeName</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Devuelve el contenido de texto del elemento. Se puede asignar
+                    para modificar</span> 
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="variable">nuevoDiv</span><span class="punctuation">.</span><span class="method">textContent</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Devuelve el contenido HTML del elemento. Se puede usar asignar
+                    para modificar</span> 
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="variable">nuevoDiv</span><span class="punctuation">.</span><span class="method">innerHTML</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+              
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Idem a .innerHTML pero incluyendo el HTML del propio elemento
+                    HTML</span> 
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="variable">nuevoDiv</span><span class="punctuation">.</span><span class="method">outerHTML</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+              
+              
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Versión no estándar de .textContent de Internet Explorer con
+                    diferencias. Evitar</span> 
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="variable">nuevoDiv</span><span class="punctuation">.</span><span class="method">innerText</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+              
+              
+                <li href="#" class="list-group-item list-group-item-action">
+                  
+                  <span class="subtitle-level2">Versión no estándar de .textContent/.outerHTML de Internet
+                    Explorer. Evitar</span> 
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="variable">nuevoDiv</span><span class="punctuation">.</span><span class="method">outerText</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+              
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row justify-content-center copyright ">
+        <div class="col-12">
+          <p>Created and designed by Lucas Delmonte - web developer</p>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #2e2e2e;
+}
+
+h2 {
+  color: white;
+}
+
+pre {
+  white-space: pre-line;
+  padding: 15px;
+}
+
+.subtitle-level1 {
+  font-family: 'Blinker', sans-serif;
+  color: rgb(50, 50, 75);
+  font-size: 19px;
+}
+
+.subtitle-level1:hover {
+  cursor: pointer;
+}
+
+.subtitle-level2 {
+  font-family: 'Blinker', sans-serif;
+  color: #333;
+  font-size: 17px;
+}
+
+.subtitle-level2:hover {
+  cursor: pointer;
+}
+
+.container-code {
+  /* display: none; */
+}
+
+.visible {
+  opacity: 1;
+  -webkit-transition: opacity 0.4s ease-out;
+  -moz-transition: opacity 0.4s ease-out;
+  -o-transition: opacity 0.4s ease-out;
+  transition: opacity 0.9s cubic-bezier(1, 1.52, 0.99, 1.57);
+}
+
+.invisible {
+  opacity: 0;
+  -webkit-transition: opacity 0.4s ease-in;
+  -moz-transition: opacity 0.4s ease-in;
+  -o-transition: opacity 0.4s ease-in;
+  transition: opacity 0.9s cubic-bezier(1, 1.52, 0.99, 1.57);
+}
+
+.container-code .background-code {
+  background-color: #212121;
+  -webkit-box-shadow: 0px 0px 9px -2px rgba(35, 35, 35, 0.82);
+  -moz-box-shadow: 0px 0px 9px -2px rgba(35, 35, 35, 0.82);
+  box-shadow: 0px 0px 9px -2px rgba(35, 35, 35, 0.82);
+}
+
+.background-code:hover {
+  background-color: #212121;
+}
+
+/* Estilos para el codigo */
+
+code > span {
+  font-family: 'Encode Sans', sans-serif;
+  color: white;
+  font-size: 19px;
+}
+
+.keyword {
+  color: #66d9ef;
+}
+
+.variable {
+  color: #f8f8f2;
+}
+
+.punctuation {
+  color: #f8f8f2;
+}
+
+.operator {
+  color: #f8f8f2;
+}
+
+.string {
+  color: #a6e22e;
+}
+
+.comment {
+  color: #8292a2;
+  font-style: italic;
+}
+
+.function {
+  color: #e6db74;
+}
+
+.number {
+  color: #ae97e5;
+}
+
+.structure {
+  color: #fb5d64;
+}
+
+.method {
+  color: #69954f;
+}
+
+@media (max-width: 1200px) {
+  .row {
+    padding: 0px 20px;
+  }
+  .background-code {
+    padding: 0px;
+  }
+}
+
+.copyright {
+  text-align: center;
+  color: #fff;
+  font-family: 'Encode Sans', sans-serif;
+}
+
+/*
+fuente para subtitulos
+font-family: 'Blinker', sans-serif;
+ */
+/*
+fuente para texto
+font-family: 'Scope One', serif;
+ */
+/*
+fuente para codigo
+font-family: 'Encode Sans', sans-serif;
+ */

@@ -1,0 +1,166 @@
+Condicion if
+* Sintaxis level 1 - Básica
+const num1 = 5;
+const num2 = 10;
+if(num1 > num2) {
+  console.log(num1 + ' es mayor que ' + num2);
+} else {
+  console.log(num2 + ' es mayor que ' + num1);
+}
+* Sintaxis level 2 - Operador ternario
+num1 > num2 ? console.log(num1 + ' es mayor que ' + num2) : console.log(num2 + ' es mayor que ' + num1);
+
+
+Crear arreglos
+let frutas = ['Manzana', 'Banana'];
+
+Recorrer arreglos
+frutas.forEach((fruta, index) () => {
+  console.log(fruta);
+})
+
+Metodos para arreglos
+* Conocer el largo
+frutas.length;
+
+* Acceder a un elemento del arreglo mediante su indice
+frutas[0];
+
+* Añadir un elemento
+frutas.push('Naranja');
+
+* Eliminar el último elemento
+frutas.pop();
+
+* Añadir un elemento al principio
+frutas.unshift('Fresa');
+
+* Eliminar el primer elemento
+frutas.shift();
+
+* Encontrar el indice de un elemento 
+frutas.indexOf('Banana');
+
+* Eliminar un elemento mediante su posicion
+frutas.splice(pos, 1);
+
+* Eliminar  varios elementos a partir de una posicion
+let vegetales = ['Repollo', 'Nabo', 'Rábano', 'Zanahoria'];
+let pos = 1, numElementos = 2;
+vegetales.splice(pos, numElementos);
+
+* Crear una copia
+let copiaArray = vegetales.slice();
+
+Crear objetos
+let miAuto = {
+    marca: 'Ford',
+    modelo: 'Mustang',
+    año: 1969
+};
+
+Crear arreglos con objetos dentro
+let miAuto = [
+  {
+    marca: 'Ford',
+    modelo: 'Mustang',
+    año: 1969
+  },
+  {
+    marca: 'Chevrolet',
+    modelo: 'Camaro',
+    año: 1977
+  }
+];
+
+Crear arreglos que tengan objetos dentro y que a su vez tengan otro arreglo
+let miAuto = [
+  {
+    marca: 'Ford',
+    modelo: 'Mustang',
+    año: [1969, 1972]
+  },
+  {
+    marca: 'Chevrolet',
+    modelo: 'Camaro',
+    año: [1977, 1980]
+  }
+];
+
+Recorrer arreglo con objetos dentro
+miAuto.forEach((miObjeto, index) () => {
+  console.log(miObjeto);
+})
+
+Navegar por el DOM
+Navegar a traves de elementos
+* Devuelve una lista de elementos HTML hijos
+children
+* Devuelve el padre del elemento o null si no tiene
+parentElement
+* Devuelve el primer elemento hijo
+firstElementChild
+* Devuelve el último elemento hijo
+lastElementChild
+* Devuelve el elemento hermano anterior o null si no tiene
+previousElementSibling
+* Devuelve el elemento hermano siguiente o null si no tiene
+nextElementSibling
+
+Navegar a traves de nodos
+* Devuelve una lista de nodos hijos. Incluye nodos de texto y comentarios
+childNodes
+* Devuelve el nodo padre del nodo o null si no tiene.
+parentNode
+* Devuelve el primer nodo hijo.
+firstChild
+* Devuelve el último nodo hijo.
+lastChild
+* Devuelve el nodo hermano anterior o null si no tiene.
+previousSibling
+* Devuelve el nodo hermano siguiente o null si no tiene.
+nextSibling	
+
+Crear elementos html
+let newDiv = document.createElement('div');
+
+Agregar elemento creado dentro de otro
+let newText = document.createTextNode('Hola!¿Qué tal?');
+newDiv.appendChild(newText);
+
+Cambiarle los estilos a un elemento html
+elem = document.getElementById(elemId);
+elem.style.background = 'white';
+
+Agregarle una clase a un elemento html
+elem = document.getElementById(elemId);
+elem.className = 'nombre-clase';
+
+Agregarle una classList a un elemento html
+elem = document.getElementById(elemId);
+elem.classList.add('nombre-clase');
+elem.classList.add('nombre-clase1', 'nombre-clase2');
+
+Eliminar una classList de un elemento html
+elem = document.getElementById(elemId);
+elem.classList.remove('nombre-clase');
+elem.classList.remove('nombre-clase1', 'nombre-clase2');
+
+Ver si el elemento contiene una clase especifica en su classList
+elem = document.getElementById(elemId);
+elem.classList.contains('nombre-clase');
+
+Insertar elementos html con innerHTML
+const div = document.querySelector('.info');
+* Devuelve el nombre del nodo (etiqueta si es un elemento HTML). Sólo lectura.
+nodeName
+* Devuelve el contenido de texto del elemento. Se puede asignar para modificar.
+textContent
+* Devuelve el contenido HTML del elemento. Se puede usar asignar para modificar.
+innerHTML
+* Idem a .innerHTML pero incluyendo el HTML del propio elemento HTML.
+outerHTML
+* Versión no estándar de .textContent de Internet Explorer con diferencias. Evitar.
+innerText
+* Versión no estándar de .textContent/.outerHTML de Internet Explorer. Evitar.
+outerText
