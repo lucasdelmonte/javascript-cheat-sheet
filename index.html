@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Javascript Guia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>Javascript Cheat Sheet</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,12 +13,13 @@
       href="https://fonts.googleapis.com/css2?family=Blinker:wght@600&family=Encode+Sans&family=Scope+One&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/png" href="/imgs/vector-javascript-1.png"/>
   </head>
   <body>
     <div class="contiainer">
       <div class="row justify-content-center">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-5 mt-4 ms-5 me-5 row-xs">
-          <h2>Estructura if y forEach</h2>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-5 mt-4 ms-5 me-5">
+          <h2>Estructura if, forEach y setTimeout</h2>
           <ul class="list-group mt-2">
             <li href="#" class="list-group-item list-group-item-action">
               <span class="subtitle-level1">Estructura if</span>
@@ -70,6 +71,22 @@
                       <span class="variable">array</span><span class="method">.forEach</span><span class="punctuation">(</span><span class="variable">element</span> <span class="punctuation">=></span> <span class="punctuation">{</span>
                         <span class="variable">&nbsp;&nbsp;&nbsp; console.<span class="method">log</span></span><span class="punctuation">(</span><span class="variable">element</span><span class="punctuation">)</span><span class="punctuation">;</span>
                       <span class="punctuation">}</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                    </code>
+                  </pre>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="list-group mt-2">
+            <li href="#" class="list-group-item list-group-item-action">
+              <span class="subtitle-level1">Estructura setTimeout</span>
+              <ul class="list-group mt-2 container-code">
+                <li href="#" class="list-group-item list-group-item-action background-code">
+                  <pre>
+                    <code class="language-js">
+                      <span class="method">setTimeout</span><span class="punctuation">( ()</span> <span class="structure">=></span> <span class="punctuation">{</span>
+                        <span class="variable">&nbsp;&nbsp;&nbsp; console.<span class="method">log</span></span><span class="punctuation">(</span><span class="string">'Hola! Tarde 1s en aparecer.'</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                      <span class="punctuation">}</span><span class="punctuation">,</span> <span class="number">1000</span><span class="punctuation">)</span><span class="punctuation">;</span>
                     </code>
                   </pre>
                 </li>
@@ -330,11 +347,187 @@
             </li>
           </ul>
         </div>
+
+        <!-- Faltan completar -->
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-5 mt-4 ms-5 me-5">
+          <h2>Buscar elementos del DOM</h2>
+          <ul class="list-group mt-2">
+            <li href="#" class="list-group-item list-group-item-action">
+              <span class="subtitle-level1">Buscar con getElement</span>
+              <ul class="list-group mt-2">
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Buscar por Id</span> 
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="keyword">const</span> <span class="variable">element</span> <span class="operator">=</span> <span class="keyword">document</span><span class="punctuation">.</span><span class="method">getElementById</span><span class="punctuation">(</span><span class="string">'miId'</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Buscar por Name</span> 
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="keyword">const</span> <span class="variable">element</span> <span class="operator">=</span> <span class="keyword">document</span><span class="punctuation">.</span><span class="method">getElementsByName</span><span class="punctuation">(</span><span class="string">'miName'</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Buscar por TagName</span> 
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="keyword">const</span> <span class="variable">element</span> <span class="operator">=</span> <span class="keyword">document</span><span class="punctuation">.</span><span class="method">getElementsByTagName</span><span class="punctuation">(</span><span class="string">'miTagName'</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Buscar por ClassName</span> 
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="keyword">const</span> <span class="variable">element</span> <span class="operator">=</span> <span class="keyword">document</span><span class="punctuation">.</span><span class="method">getElementsByClassName</span><span class="punctuation">(</span><span class="string">'miClassName'</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Buscar por TagNameNS</span> 
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="keyword">const</span> <span class="variable">element</span> <span class="operator">=</span> <span class="keyword">document</span><span class="punctuation">.</span><span class="method">getElementsByTagNameNS</span><span class="punctuation">(</span><span class="string">'miTagNameNS'</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="list-group mt-2">
+            <li href="#" class="list-group-item list-group-item-action">
+              <span class="subtitle-level1">Buscar con querySelector o querySelectorAll</span>
+              <ul class="list-group mt-2">
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Buscar por Id</span> 
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="keyword">const</span> <span class="variable">element</span> <span class="operator">=</span> <span class="keyword">document</span><span class="punctuation">.</span><span class="method">querySelector</span><span class="punctuation">(</span><span class="string">'#miId'</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Buscar por Name</span> 
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="keyword">const</span> <span class="variable">element</span> <span class="operator">=</span> <span class="keyword">document</span><span class="punctuation">.</span><span class="method">querySelector</span><span class="punctuation">(</span><span class="string">'[name="miName"]'</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                          <span class="keyword">const</span> <span class="variable">elements</span> <span class="operator">=</span> <span class="keyword">document</span><span class="punctuation">.</span><span class="method">querySelectorAll</span><span class="punctuation">(</span><span class="string">'[name="miName"]'</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Buscar por TagName</span> 
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="keyword">const</span> <span class="variable">element</span> <span class="operator">=</span> <span class="keyword">document</span><span class="punctuation">.</span><span class="method">querySelector</span><span class="punctuation">(</span><span class="string">'miTagName'</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                          <span class="keyword">const</span> <span class="variable">elements</span> <span class="operator">=</span> <span class="keyword">document</span><span class="punctuation">.</span><span class="method">querySelectorAll</span><span class="punctuation">(</span><span class="string">'miTagName'</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Buscar por ClassName</span> 
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="keyword">const</span> <span class="variable">element</span> <span class="operator">=</span> <span class="keyword">document</span><span class="punctuation">.</span><span class="method">querySelector</span><span class="punctuation">(</span><span class="string">'.miClassName'</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                          <span class="keyword">const</span> <span class="variable">elements</span> <span class="operator">=</span> <span class="keyword">document</span><span class="punctuation">.</span><span class="method">querySelectorAll</span><span class="punctuation">(</span><span class="string">'.miClassName'</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Buscar por Data</span> 
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="keyword">const</span> <span class="variable">element</span> <span class="operator">=</span> <span class="keyword">document</span><span class="punctuation">.</span><span class="method">querySelector</span><span class="punctuation">(</span><span class="string">'[data="miData"]'</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                          <span class="keyword">const</span> <span class="variable">elements</span> <span class="operator">=</span> <span class="keyword">document</span><span class="punctuation">.</span><span class="method">querySelectorAll</span><span class="punctuation">(</span><span class="string">'[data="miData"]'</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Buscar por Alt</span> 
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="keyword">const</span> <span class="variable">element</span> <span class="operator">=</span> <span class="keyword">document</span><span class="punctuation">.</span><span class="method">querySelector</span><span class="punctuation">(</span><span class="string">'[alt="miAlt"]'</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                          <span class="keyword">const</span> <span class="variable">elements</span> <span class="operator">=</span> <span class="keyword">document</span><span class="punctuation">.</span><span class="method">querySelectorAll</span><span class="punctuation">(</span><span class="string">'[alt="miAlt"]'</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="list-group mt-2">
+            <li href="#" class="list-group-item list-group-item-action">
+              <span class="subtitle-level1">Busqueda más específica con querySelector o querySelectorAll</span>
+              <ul class="list-group mt-2">
+                <li href="#" class="list-group-item list-group-item-action">
+                  <span class="subtitle-level2">Buscar un elemento que contenga x clase</span> 
+                  <ul class="list-group col-12 mt-2 container-code">
+                    <li href="#" class="list-group-item list-group-item-action background-code">
+                      <pre>
+                        <code class="language-js">
+                          <span class="keyword">const</span> <span class="variable">element</span> <span class="operator">=</span> <span class="keyword">document</span><span class="punctuation">.</span><span class="method">querySelector</span><span class="punctuation">(</span><span class="string">'input', '.miClase'</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                          <span class="keyword">const</span> <span class="variable">elements</span> <span class="operator">=</span> <span class="keyword">document</span><span class="punctuation">.</span><span class="method">querySelectorAll</span><span class="punctuation">(</span><span class="string">'input', '.miClase'</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                        </code>
+                      </pre>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div> 
         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-5 mt-4 ms-5 me-5">
           <h2>Navegar por el DOM</h2>
           <ul class="list-group mt-2">
             <li href="#" class="list-group-item list-group-item-action">
-              <span class="subtitle-level1">Navegar a traves de elementos</span>
+              <span class="subtitle-level1">Navegar a través de elementos</span>
               <ul class="list-group col-12 mt-2">
                 <li href="#" class="list-group-item list-group-item-action">
                   <span class="subtitle-level2">Devuelve una lista de elementos HTML hijos</span> 
@@ -413,7 +606,7 @@
           </ul>
           <ul class="list-group mt-2">
             <li href="#" class="list-group-item list-group-item-action">
-              <span class="subtitle-level1">Navegar a traves de nodos</span>
+              <span class="subtitle-level1">Navegar a través de nodos</span>
               <ul class="list-group col-12 mt-2">
                 <li href="#" class="list-group-item list-group-item-action">
                   <span class="subtitle-level2">Devuelve una lista de nodos hijos. Incluye nodos de texto y
@@ -492,8 +685,7 @@
             </li>
           </ul>
         </div>
-
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-5 mt-4 ms-5 me-5 mb-5">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-5 mt-4 ms-5 me-5 mb-3">
           <h2>Crear, modificar o eliminar elementos HTML</h2>
           <ul class="list-group mt-2">
             <li href="#" class="list-group-item list-group-item-action">
@@ -511,21 +703,21 @@
           </ul>
           <ul class="list-group mt-2">
             <li href="#" class="list-group-item list-group-item-action">
-              <span class="subtitle-level1">Eliminar elementos html</span>
+              <span class="subtitle-level1">Eliminar elemento html</span>
               <ul class="list-group col-12 mt-2 container-code">
                 <li href="#" class="list-group-item list-group-item-action background-code">
-                    <pre>
-                      <code class="language-js">
-                        <span class="variable">nuevoDiv</span><span class="punctuation">.</span><span class="method">removeChild</span><span class="punctuation">(</span><span class="variable">element</span><span class="punctuation">)</span><span class="punctuation">;</span>
-                      </code>
-                    </pre>
+                  <pre>
+                    <code class="language-js">
+                      <span class="variable">nuevoDiv</span><span class="punctuation">.</span><span class="method">remove</span><span class="punctuation">(</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                    </code>
+                  </pre>
                 </li>
               </ul>
             </li>
           </ul>
           <ul class="list-group mt-2">
             <li href="#" class="list-group-item list-group-item-action">
-              <span class="subtitle-level1">Agregar elemento creado dentro de otro</span>
+              <span class="subtitle-level1">Agregar elemento hijo</span>
               <ul class="list-group col-12 mt-2 container-code">
                 <li href="#" class="list-group-item list-group-item-action background-code">
                   <pre>
@@ -534,6 +726,20 @@
                       <span class="variable">nuevoDiv</span><span class="punctuation">.</span><span class="method">appendChild</span><span class="punctuation">(</span><span class="variable">nuevoTexto</span><span class="punctuation">)</span><span class="punctuation">;</span>
                     </code>
                   </pre>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="list-group mt-2">
+            <li href="#" class="list-group-item list-group-item-action">
+              <span class="subtitle-level1">Eliminar elemento hijo</span>
+              <ul class="list-group col-12 mt-2 container-code">
+                <li href="#" class="list-group-item list-group-item-action background-code">
+                    <pre>
+                      <code class="language-js">
+                        <span class="variable">nuevoDiv</span><span class="punctuation">.</span><span class="method">removeChild</span><span class="punctuation">(</span><span class="variable">element</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                      </code>
+                    </pre>
                 </li>
               </ul>
             </li>
@@ -627,7 +833,6 @@
                     </li>
                   </ul>
                 </li>
-
                 <li href="#" class="list-group-item list-group-item-action">
                   <span class="subtitle-level2">Devuelve el contenido de texto del elemento. Se puede asignar
                     para modificar</span> 
@@ -641,7 +846,6 @@
                     </li>
                   </ul>
                 </li>
-
                 <li href="#" class="list-group-item list-group-item-action">
                   <span class="subtitle-level2">Devuelve el contenido HTML del elemento. Se puede usar asignar
                     para modificar</span> 
@@ -655,7 +859,6 @@
                     </li>
                   </ul>
                 </li>
-              
                 <li href="#" class="list-group-item list-group-item-action">
                   <span class="subtitle-level2">Idem a .innerHTML pero incluyendo el HTML del propio elemento
                     HTML</span> 
@@ -669,8 +872,6 @@
                     </li>
                   </ul>
                 </li>
-              
-              
                 <li href="#" class="list-group-item list-group-item-action">
                   <span class="subtitle-level2">Versión no estándar de .textContent de Internet Explorer con
                     diferencias. Evitar</span> 
@@ -684,10 +885,7 @@
                     </li>
                   </ul>
                 </li>
-              
-              
                 <li href="#" class="list-group-item list-group-item-action">
-                  
                   <span class="subtitle-level2">Versión no estándar de .textContent/.outerHTML de Internet
                     Explorer. Evitar</span> 
                   <ul class="list-group col-12 mt-2 container-code">
@@ -700,13 +898,12 @@
                     </li>
                   </ul>
                 </li>
-              
             </li>
           </ul>
         </div>
       </div>
 
-      <div class="row justify-content-center copyright ">
+      <div class="row justify-content-center copyright mt-2">
         <div class="col-12">
           <p>Created and designed by Lucas Delmonte - web developer</p>
         </div>
