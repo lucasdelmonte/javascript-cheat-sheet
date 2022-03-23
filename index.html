@@ -17,7 +17,7 @@
   </head>
   <body>
     <div class="contiainer">
-      <div class="row justify-content-center">
+      <div class="d-flex justify-content-center flex-wrap">
         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-5 mt-4 ms-5 me-5">
           <h2>Estructura if, forEach y setTimeout</h2>
           <ul class="list-group mt-2">
@@ -348,7 +348,6 @@
           </ul>
         </div>
 
-        <!-- Faltan completar -->
         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-5 mt-4 ms-5 me-5">
           <h2>Buscar elementos del DOM</h2>
           <ul class="list-group mt-2">
@@ -685,6 +684,141 @@
             </li>
           </ul>
         </div>
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-5 mt-4 ms-5 me-5">
+          <h2>Eventos</h2>
+          <ul class="list-group mt-2">
+            <li href="#" class="list-group-item list-group-item-action">
+              <span class="subtitle-level1">Estructura addEventListener</span>
+              <ul class="list-group col-12 mt-2 container-code">
+                <li href="#" class="list-group-item list-group-item-action background-code">
+                  <pre>
+                    <code class="language-js">
+                      <span class="keyword">const</span> <span class="variable">element</span> <span class="operator">=</span> <span class="keyword">document</span><span class="punctuation">.</span><span class="method">getElementById</span><span class="punctuation">(</span><span class="string">'miId'</span><span class="punctuation">)</span><span class="punctuation">;</span>
+                      <span class="variable">element</span><span class="punctuation">.</span><span class="method">addEventListener</span><span class="punctuation">(</span><span class="string">'nombreEvento'</span><span class="punctuation">,</span> <span class="punctuation">(</span><span class="punctuation">evt</span><span class="punctuation">) <span class="structure">=></span> </span><span class="punctuation">{</span>
+                        <span class="variable">&nbsp;&nbsp;&nbsp; console.<span class="method">log</span></span><span class="variable">(</span> <span class="string">'Acción que dispara el evento.'</span><span class="punctuation">)</span><span class="punctuation">;</span> 
+                      </span><span class="punctuation">}</span></span><span class="punctuation">)</span><span class="punctuation">;</span>
+                    </code>
+                  </pre>
+                </li>
+              </ul>
+            </li>
+            <li href="#" class="list-group-item list-group-item-action">
+              <span class="subtitle-level1">Tipos de eventos</span>
+              <ul class="list-group mt-2">
+                <li href="#" class="list-group-item list-group-item-action">
+                  <table class="table">
+                    <thead class="table-dark">
+                      <tr>
+                        <th>Evento</th>
+                        <th>Descripción</th>
+                        <th>Elementos para los que está definido</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>blur</td>
+                        <td>Un elemento pierde el foco</td>
+                        <td>button, input, label, select, textarea, body</td>
+                      </tr>
+                      <tr>
+                        <td>change</td>
+                        <td>Un elemento ha sido modificado</td>
+                        <td>input, select, textarea</td>
+                      </tr>
+                      <tr>
+                        <td>click</td>
+                        <td>Pinchar y soltar el ratón</td>
+                        <td>Todos los elementos</td>
+                      </tr>
+                      <tr>
+                        <td>dblclick</td>
+                        <td>Pinchar dos veces seguidas con el ratón</td>
+                        <td>Todos los elementos</td>
+                      </tr>
+                      <tr>
+                        <td>focus</td>
+                        <td>Seleccionar un elemento</td>
+                        <td>button, input, label, select, textarea, body</td>
+                      </tr>
+                      <tr>
+                        <td>keydown</td>
+                        <td>Pulsar una tecla (sin soltar)</td>
+                        <td>Elementos de formulario y body</td>
+                      </tr>
+                      <tr>
+                        <td>keypress</td>
+                        <td>Pulsar una tecla</td>
+                        <td>Elementos de formulario y body</td>
+                      </tr>
+                      <tr>
+                        <td>keyup</td>
+                        <td>Soltar una tecla pulsada</td>
+                        <td>Elementos de formulario y body</td>
+                      </tr>
+                      <tr>
+                        <td>load</td>
+                        <td>La página se ha cargado completamente</td>
+                        <td>body</td>
+                      </tr>
+                      <tr>
+                        <td>mousedown</td>
+                        <td>Pulsar (sin soltar) un botón del ratón</td>
+                        <td>Todos los elementos</td>
+                      </tr>
+                      <tr>
+                        <td>mousemove</td>
+                        <td>Mover el ratón</td>
+                        <td>Todos los elementos</td>
+                      </tr>
+                      <tr>
+                        <td>mouseout</td>
+                        <td>El ratón "sale" del elemento (pasa por encima de otro elemento)</td>
+                        <td>Todos los elementos</td>
+                      </tr>
+                      <tr>
+                        <td>mouseover</td>
+                        <td>El ratón "entra" en el elemento (pasa por encima del elemento)</td>
+                        <td>Todos los elementos</td>
+                      </tr>
+                      <tr>
+                        <td>mouseup</td>
+                        <td>Soltar el botón que estaba pulsado en el ratón</td>
+                        <td>Todos los elementos</td>
+                      </tr>
+                      <tr>
+                        <td>reset</td>
+                        <td>Inicializar el formulario (borrar todos sus datos)</td>
+                        <td>form</td>
+                      </tr>
+                      <tr>
+                        <td>resize</td>
+                        <td>Se ha modificado el tamaño de la ventana del navegador</td>
+                        <td>body</td>
+                      </tr>
+                      <tr>
+                        <td>select</td>
+                        <td>Seleccionar un texto</td>
+                        <td>input, textarea</td>
+                      </tr>
+                      <tr>
+                        <td>submit</td>
+                        <td>Enviar el formulario</td>
+                        <td>form</td>
+                      </tr>
+                      <tr>
+                        <td>unload</td>
+                        <td>Se abandona la página (por ejemplo al cerrar el navegador)</td>
+                        <td>body</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-5 mt-4 ms-5 me-5 mb-3">
           <h2>Crear, modificar o eliminar elementos HTML</h2>
           <ul class="list-group mt-2">
